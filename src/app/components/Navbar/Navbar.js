@@ -19,6 +19,14 @@ function Navbar() {
         {
             title:"Contact",
             path:"/contacts"
+        },
+        {
+            title:"Blogs",
+            path:"/blogs"
+        },
+        {
+            title:"Dashboard",
+            path:"/dashboard"
         }
     ]
     
