@@ -34,6 +34,14 @@ function Navbar() {
          router.push('/about')
     }
 
+    if(pathName.includes('dashboard')){
+        return (
+            <div className='bg-green-400'>
+                Dashboard Navbar
+            </div>
+        )
+    }
+
     return (
         <div>
              <nav className="bg-red-500 px-6 py-4 flex justify-between items-center">
