@@ -27,6 +27,10 @@ function Navbar() {
         {
             title:"Dashboard",
             path:"/dashboard"
+        },
+        {
+            title:"Category",
+            path:"/categories"
         }
     ]
     
