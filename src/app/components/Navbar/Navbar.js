@@ -31,6 +31,18 @@ function Navbar() {
         {
             title:"Category",
             path:"/categories"
+        },
+        {
+            title:"Posts",
+            path:"/posts"
+        },
+        {
+            title:"Meals",
+            path:"/meals"
+        },
+        {
+            title:"Gallery",
+            path:"/gallery"
         }
     ]
     
