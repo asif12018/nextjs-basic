@@ -47,7 +47,7 @@ function Navbar() {
     ]
     
     const handler = () =>{
-         router.push('/about')
+         router.push('/api/auth/signin')
     }
 
     if(pathName.includes('dashboard')){
