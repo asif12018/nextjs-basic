@@ -1,8 +1,10 @@
+
 import localFont from "next/font/local";
 //using google custom fonts
 import { Roboto } from "next/font/google"; // Named import for Google fonts
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
+import AuthProvider from "./services/AuthProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,10 +39,21 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${robotoSans.variable} ${robotoMono.variable} antialiased`}
-      >
+      > 
+        <AuthProvider>
         <Navbar />
-        <div className="h-screen">{children}</div>
+        <div className="h-screen">
+            
+           
+            {children}
+           
+            
+            
+            
+         
+        </div>
         <footer>this is my footer</footer>
+        </AuthProvider>
       </body>
     </html>
   );

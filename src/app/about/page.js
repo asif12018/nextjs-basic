@@ -1,5 +1,7 @@
 import React from 'react'
 import AboutContent from '../components/AboutContent/AboutContent'
+import { getServerSession } from 'next-auth'
+import { authOptions } from '../api/auth/[...nextauth]/route'
 
 
 export const metadata = {
@@ -12,6 +14,9 @@ const getTime = async() =>{
     const data = await  res.json();
     return data.currentTime;
 }
+
+const session = await getServerSession(authOptions);
+console.log('session is:',session)
 
 const AboutPage = async ()=> {
     const currentTime = await getTime();
